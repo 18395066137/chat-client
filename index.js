@@ -197,7 +197,8 @@ function enterTxt(event) {
 
 // 连接信令服务器
 // const signalingServer = new WebSocket('wss://neiwang.1024bugs.com/ws');
-const signalingServer = new WebSocket('ws://localhost:8081');
+// const signalingServer = new WebSocket('ws://localhost:8081');
+const signalingServer = new WebSocket('https://chat-server-o656.onrender.com');
 signalingServer.onopen = () => {
   console.log('Connected to signaling server');
   setInterval(() => {
